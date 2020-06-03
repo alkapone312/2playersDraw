@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gra</title>
+	<style type="text/css">
+		*
+		{
+			margin:0;
+			padding: 0;
+		}
+
+		body
+		{
+			width: 100vw;
+			height: 100vh;
+			overflow: auto;
+		}
+		main
+		{
+			width:50%;
+			height:5%;
+			position: absolute;
+			top:0;
+			left:25%;
+		}
+		div
+		{
+			float:left;
+			width: 9%;
+			height: 100%;
+			cursor:pointer;
+			border:2px black solid;
+		}
+
+		footer
+		{
+			position: absolute;
+			top:33%;
+			left:calc(50% - 150px);
+			color: white;
+			padding: 25px;
+			width: 300px;
+			background-color: gray;
+			border-radius: 20px;
+			box-shadow: 0 0 20px -5px black;
+		}
+
+		h1
+		{
+			position: absolute;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1></h1>
+	<h1></h1>
+	<footer>Co ma narysować twój przeciwnik? <br> <input type="text" name="drawing"> <button onclick="send()">OK!</button> </footer>
+	<main>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</main>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
